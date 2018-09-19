@@ -2,6 +2,17 @@ package Week3Homework;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Stack;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.Vector;
 
 /*Program output
  * 
@@ -71,8 +82,6 @@ c) If we want to remove an object from the HashMap we need to use the key value 
 * The first element of List has index 0, second 1 etc. Java List accepts any object. List can store mix objects of different types.    
 */
 
-
-
 public class ArrayVsArrayList {
 
 	private static int[] numbers;
@@ -122,17 +131,19 @@ public class ArrayVsArrayList {
 		// Printing a list
 
 		for (int i = 0; i < numbers.length; i++)
-			System.out.print(" " + numbers[i] + " "); // prints out list of numbers
-		System.out.println("Regular Array with unsorted values "); 
+			System.out.print(" " + numbers[i] + " "); // prints out list of
+														// numbers
+		System.out.println("Regular Array with unsorted values ");
 		System.out.println(" ");
 
 		Arrays.sort(numbers); // Sorts the number for regular array
-		System.out.println("Regular array after sorting : " + Arrays.toString(numbers)); // prints out sorted numbers
-																							
+		System.out.println("Regular array after sorting : " + Arrays.toString(numbers)); // prints
+																							// out
+																							// sorted
+																							// numbers
 
 		// Printing elements of an ArrayList
 		System.out.println("This is an ArrayList : " + band);
-
 
 		// Computing and printing the size of the list
 		System.out.println(" ");
@@ -195,4 +206,38 @@ public class ArrayVsArrayList {
 
 	}
 
+	// This is a small example how we can use collections
+	public static void Collections() {
+
+		// Map<Integer, String> tree = new TreeMap<Integer, String>();
+		// LinkedHashMap<Integer, String> hashLinkedMap = new LinkedHashMap<>();
+		// Hashtable<Integer, String> dictionary = new Hashtable<>();
+		// Stack<String> stack = new Stack<>();
+		// Vector<Integer> vector = new Vector<>();
+		// TreeSet<String> treeSet = new TreeSet<>();
+		// PriorityQueue<String> priorityQ = new PriorityQueue<>();
+		// List<String> list = new LinkedList<String>();
+		// List<Integer> numbers = new ArrayList<Integer>();
+
+		Map<Integer, String> map = new HashMap<Integer, String>();
+
+		map.put(1, "Pete");
+		map.put(2, "Steve");
+		map.put(4, "Kate");
+		map.put(5, "Peter");
+		map.put(6, "Alan");
+		map.put(7, "Scott");
+
+		map.size();
+		map.isEmpty();
+		map.get(1);
+		map.remove(2);
+		map.size();
+		map.containsKey(7);
+		map.values();
+		map.containsValue("Scott");
+		map.replace(5, "Joe");
+		map.get(5);
+
+	}
 }
