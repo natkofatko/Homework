@@ -3,8 +3,27 @@ package Week3Homework;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* 
- * ADVANTAGES OF ARRAYLIST<>:
+/*Program output
+ * 
+ *	Regular Array with unsorted values 20  10  30  50  40  70  60  80  90  100 
+ 
+	Regular array after sorting : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+	This is an ArrayList : [John, Rigo, Stuart, George, Paul, Pete]
+ 
+	Regular array has 10 elements
+	ArrayList has assigned 6 elements
+ 
+ 	After removing some elements the size of the ArrayList is 4
+ 
+	Our new Arraylist after adding new elements has changed the size to 9 [Rigo, George, Paul, Pete, Norman, Chase, Jimmy, Tommy, Stuart]
+	Our new regular array after modification changed the size from 10 to 20
+ 
+ 	Rigo George Paul Pete Norman Chase Jimmy Tommy Stuart This is regular array after converting from ArrayList
+ 
+ 	This list contains different type of objects [125, String, true, s]
+ *
+
+ ADVANTAGES OF ARRAYLIST<>:
  * 
  * ArrayList has much more advantages than  a regular array. Both of them are used to store group of objects.
  * One of the biggest disadvantages of array is their fixed length. Once you create the array you can not change the size of it. 
@@ -51,6 +70,8 @@ c) If we want to remove an object from the HashMap we need to use the key value 
 * d) List is a part of the Collections in Java. List represents an ordered list of objects. Each element in Java List has an index. 
 * The first element of List has index 0, second 1 etc. Java List accepts any object. List can store mix objects of different types.    
 */
+
+
 
 public class ArrayVsArrayList {
 
@@ -101,29 +122,17 @@ public class ArrayVsArrayList {
 		// Printing a list
 
 		for (int i = 0; i < numbers.length; i++)
-			System.out.print(" " + numbers[i] + " "); // prints out list of
-		System.out.println("Regular Array with unsorted values "); // numbers
+			System.out.print(" " + numbers[i] + " "); // prints out list of numbers
+		System.out.println("Regular Array with unsorted values "); 
 		System.out.println(" ");
 
 		Arrays.sort(numbers); // Sorts the number for regular array
-		System.out.println("Regular array after sorting : " + Arrays.toString(numbers)); // prints
-																							// out
-																							// sorted
-		// numbers
+		System.out.println("Regular array after sorting : " + Arrays.toString(numbers)); // prints out sorted numbers
+																							
 
 		// Printing elements of an ArrayList
 		System.out.println("This is an ArrayList : " + band);
 
-		// //removing an element from regular array, I do not quite understand
-		// this method?
-		// System.out.println(Arrays.toString(numbers));
-		// int removeIndex = 0;
-		// for(int i = removeIndex; i< numbers.length-1; i++)
-		// {
-		// numbers[i]= numbers[i+1];
-		//
-		// }
-		// System.out.println(Arrays.toString(numbers));
 
 		// Computing and printing the size of the list
 		System.out.println(" ");
